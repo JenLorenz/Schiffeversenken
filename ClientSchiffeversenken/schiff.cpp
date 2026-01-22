@@ -1,16 +1,24 @@
 #include "schiff.h"
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
 
-Schiff::Schiff() {
-    Schiff *schiff = new Schiff();
+Schiff::Schiff(int id) {
+
+    Id = id;
+    setBreite();
+    setLänge();
+    setSpecial();
 }
 
 void Schiff::setSpecial(void){
-
+    std::srand(static_cast<unsigned>(std::time(nullptr)));
+    std::string arr[3] = {"Spiegel","Atombombe",""};
+    Powerup = arr[std::rand()%3];
 }
-string Schiff::getSpecial(void){
-    return "";
+
+std::string Schiff::getSpecial(void){
+    return Powerup;
 }
 int Schiff::getBreite(void){
     return Breite;
@@ -37,6 +45,6 @@ void Schiff::setPositionX(int positionX){
 int Schiff::getPositionY(void){
     return PositionY;
 }
-int getPositionX(void){
-    Schiff::return PositionX;
+int Schiff::getPositionX(void){
+    return PositionX;
 }
