@@ -1,6 +1,7 @@
 #ifndef SPIELER_H
 #define SPIELER_H
 #include "schiff.h"
+#include <vector>
 #include <iostream>
 class Spieler
 {
@@ -9,12 +10,14 @@ public:
     std::string Name;
     int PositionXTarget;
     int PositionYTarget;
+    std::vector<Schiff> schiffe;
 //    Schiff Schiffe[6];
+    void addSchiffe(Schiff s);
     void setSchiffe();
     void schiffeAbschießen();
     void setPositionXTarget(int positionTargetX);
     void setPositionYTarget(int positionTargetY);
-    //Schiff getSchiffe();
+    std::vector<Schiff> getSchiffe();
     std::string getName();
     void setName(std::string name);
     //Spielfeld getSpielfeld();

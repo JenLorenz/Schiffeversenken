@@ -4,12 +4,16 @@
 
 Spieler::Spieler(std::string name) {
     Name = name;
+    setSchiffe();
 }
-/*void Spieler::setSchiffe(){
-    for(int i=0;i++;i<SchiffAnzahl ){
-        Schiffe[i]= new Schiff(i);
+void Spieler::setSchiffe(){
+    for (int i = 0; i ++; i<SchiffAnzahl){
+        addSchiffe(Schiff(i));
     }
-}*/
+}
+void Spieler::addSchiffe(Schiff s){
+   schiffe.push_back(s);
+}
 void Spieler::schiffeAbschießen(){
 //noch nicht klar was passieren wird
 }
@@ -22,9 +26,9 @@ void Spieler::setPositionYTarget(int targetPositionY){
 /*Spielfeld Spieler::getSpielfeld(){
     return Spielfeld;
 }*/
-/*std::array<Schiff,6> Spieler::getSchiffe(){
-    return Schiffe;
-}*/
+std::vector<Schiff> Spieler::getSchiffe(){
+    return schiffe;
+}
 std::string Spieler::getName(){
     return Name;
 }
