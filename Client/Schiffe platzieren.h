@@ -1,5 +1,5 @@
-#ifndef DIALOG_H
-#define DIALOG_H
+#ifndef SCHIFFE PLATZIEREN_H
+#define SCHIFFE PLATZIEREN_H
 
 #include <QDialog>
 
@@ -19,4 +19,4 @@ private:
     Ui::Dialog *ui;
 };
 
-#endif // DIALOG_H
+#endif // SCHIFFE PLATZIEREN_H

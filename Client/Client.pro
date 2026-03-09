@@ -9,17 +9,26 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    dialog.cpp \
+    Schiffe platzieren.cpp \
+    Startbildschirm.cpp \
+    endbildschirm.cpp \
     main.cpp \
-    mainwindow.cpp
+    schiffeplatzieren.cpp \
+    spielbildschirm.cpp
 
 HEADERS += \
-    dialog.h \
-    mainwindow.h
+    Schiffe platzieren.h \
+    Startbildschirm.h \
+    endbildschirm.h \
+    schiffeplatzieren.h \
+    spielbildschirm.h
 
 FORMS += \
-    dialog.ui \
-    mainwindow.ui
+    Schiffe platzieren.ui \
+    Startbildschirm.ui \
+    endbildschirm.ui \
+    schiffeplatzieren.ui \
+    spielbildschirm.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -1,5 +1,5 @@
-#include "dialog.h"
-#include "ui_dialog.h"
+#include "Schiffe platzieren.h"
+#include "ui_Schiffe platzieren.h"
 
 Dialog::Dialog(QWidget *parent)
     : QDialog(parent)
