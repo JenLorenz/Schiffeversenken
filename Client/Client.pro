@@ -20,7 +20,8 @@ SOURCES += \
     schiff.cpp \
     schiffeplatzieren.cpp \
     spielbildschirm.cpp \
-    spieler.cpp
+    spieler.cpp \
+    spielfeld.cpp
 
 HEADERS += \
     Schiffe platzieren.h \
@@ -33,7 +34,8 @@ HEADERS += \
     schiff.h \
     schiffeplatzieren.h \
     spielbildschirm.h \
-    spieler.h
+    spieler.h \
+    spielfeld.h
 
 FORMS += \
     Schiffe platzieren.ui \
