@@ -17,8 +17,10 @@ SOURCES += \
     mobilschiffeplatzieren.cpp \
     mobilspielfeld.cpp \
     mobilstartbildschirm.cpp \
+    schiff.cpp \
     schiffeplatzieren.cpp \
-    spielbildschirm.cpp
+    spielbildschirm.cpp \
+    spieler.cpp
 
 HEADERS += \
     Schiffe platzieren.h \
@@ -28,8 +30,10 @@ HEADERS += \
     mobilschiffeplatzieren.h \
     mobilspielfeld.h \
     mobilstartbildschirm.h \
+    schiff.h \
     schiffeplatzieren.h \
-    spielbildschirm.h
+    spielbildschirm.h \
+    spieler.h
 
 FORMS += \
     Schiffe platzieren.ui \
