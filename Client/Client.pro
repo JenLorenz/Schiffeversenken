@@ -9,7 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    Schiffe platzieren.cpp \
+#    Schiffe platzieren.cpp \
     Startbildschirm.cpp \
     endbildschirm.cpp \
     main.cpp \
@@ -20,7 +20,7 @@ SOURCES += \
     spielfeld.cpp
 
 HEADERS += \
-    Schiffe platzieren.h \
+ #   Schiffe platzieren.h \
     Startbildschirm.h \
     endbildschirm.h \
     schiff.h \
@@ -30,7 +30,7 @@ HEADERS += \
     spielfeld.h
 
 FORMS += \
-    Schiffe platzieren.ui \
+  #  Schiffe platzieren.ui \
     Startbildschirm.ui \
     endbildschirm.ui \
     schiffeplatzieren.ui \
