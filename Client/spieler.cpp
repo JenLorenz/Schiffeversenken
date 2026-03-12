@@ -13,7 +13,8 @@ void Spieler::setSchiffe(){
     }
 }
 void Spieler::setSpielfeld(){
-//    spielfeld = new Spielfeld();
+    Spielfeld field();
+    spielfeld = field();
 }
 void Spieler::addSchiffe(Schiff s){
     schiffe.push_back(s);

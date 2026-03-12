@@ -13,7 +13,7 @@
 
 int main(int argc, char *argv[])
 {    // creating socket
-    int clientSocket = socket(AF_INET, SOCK_STREAM, 0);
+  /*  int clientSocket = socket(AF_INET, SOCK_STREAM, 0);
 
     // specifying address
     sockaddr_in serverAddress;
@@ -31,8 +31,8 @@ int main(int argc, char *argv[])
 
     // closing socket
     close(clientSocket);
-
-    return 0;
+*/
+    //return 0;
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
