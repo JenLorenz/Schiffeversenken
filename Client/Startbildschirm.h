@@ -17,6 +17,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_NamenEingabe_editingFinished();
+
+    void on_SpielErstellen_clicked(bool checked);
+
 private:
     Ui::MainWindow *ui;
 };

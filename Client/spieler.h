@@ -20,7 +20,7 @@ public:
     std::vector<Schiff> getSchiffe();
     std::string getName();
     void setName(std::string name);
-    Spielfeld spielfeld;
+    Spielfeld *spielfeld;
     void setSpielfeld();
     Spielfeld getSpielfeld();
 private:

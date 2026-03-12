@@ -13,8 +13,7 @@ void Spieler::setSchiffe(){
     }
 }
 void Spieler::setSpielfeld(){
-    Spielfeld field();
-    spielfeld = field();
+    *spielfeld = Spielfeld();
 }
 void Spieler::addSchiffe(Schiff s){
     schiffe.push_back(s);
@@ -29,7 +28,7 @@ void Spieler::setPositionYTarget(int targetPositionY){
     PositionYTarget = targetPositionY;
 }
 Spielfeld Spieler::getSpielfeld(){
-    return spielfeld;
+    return *spielfeld;
 }
 std::vector<Schiff> Spieler::getSchiffe(){
     return schiffe;
