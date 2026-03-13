@@ -16,11 +16,13 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    bool exsistiertEinSpiel();
 
 private slots:
-    void on_NamenEingabe_editingFinished();
 
     void on_SpielErstellen_clicked(bool checked);
+
+    void on_lineEdit_textChanged(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;
