@@ -23,9 +23,11 @@ int Spielfeld::getSpielfeld(int x, int y) const {
 void Spielfeld::setGetroffenesFeld(int x, int y) {
     if (x >= 0 && x < 10 && y >= 0 && y < 10) {
         if (spielfeld[x][y] == 1)
-            getroffeneFelder[x][y] = 2; // Treffer
+            getroffeneFelder[x][y] = 2;
+        // Spieler hat ein Schifffeld getroffen
         else
-            getroffeneFelder[x][y] = 1; // Daneben
+            getroffeneFelder[x][y] = 1;
+        // Spieler hat nicht getroffen
     }
 }
 int Spielfeld::getGetroffenesFeld(int x, int y) const {
@@ -45,12 +47,16 @@ void Spielfeld::printSpielfeld(bool sichtbar) const {
         for (int x = 0; x < 10; x++) {
             if (getroffeneFelder[x][y] == 2)
                 std::cout << " # ";
+            //  # Schiff getroffen
             else if (getroffeneFelder[x][y] == 1)
                 std::cout << " O ";
+            //  0 leeres Feld
             else if (sichtbar && spielfeld[x][y] == 1)
                 std::cout << " X ";
+            // X eigenes Schiff
             else
                 std::cout << " ~ ";
+            // ~ für leeres Feld
         }
         std::cout << std::endl;
     }

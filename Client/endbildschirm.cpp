@@ -27,6 +27,6 @@ void Endbildschirm::on_pushButton_2_clicked()
 
 void Endbildschirm::on_textBrowser_textChanged()
 {
-    //Erhält vom Server die Infomration ob der Player gewonnen oder verlohren hat und stellt diese da..
+    //Erhält vom Server die Infomration ob der Player gewonnen oder verloren hat und stellt diese da..
 }
 
