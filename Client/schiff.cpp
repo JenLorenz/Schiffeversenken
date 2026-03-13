@@ -13,7 +13,7 @@ Schiff::Schiff(int id) {
 
 void Schiff::setSpecial(void){
     std::srand(static_cast<unsigned>(std::time(nullptr)));
-    std::string arr[3] = {"Spiegel","Atombombe",""};
+    std::string arr[3] = {"Spiegel","Atombombe","Granate","Nebel","Zivilbot","Radar","Doppelschuss","Schild","Spiegel"};
     Powerup = arr[std::rand()%3];
 }
 
